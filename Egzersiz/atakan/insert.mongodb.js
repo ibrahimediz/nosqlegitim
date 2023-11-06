@@ -2,7 +2,7 @@ dbName = "kutuphane"
 colName = "kitap"
 use("kutuphane")
 
-/*dokuman = {
+dokuman = {
     'isbn':null,
     'coksatan':true,
     'fiyat':50.25,
@@ -12,7 +12,7 @@ use("kutuphane")
     'pattern':/\d+/,
     'satin_alan':["Ali",5,"İsmail",3],
     'yazar':{'isim':"İhsan Oktay",'soyisim':"ANAR"},
-    'kayit_yapan':"İbrahim EDİZ",
+    'kayit_yapan':"atknblt",
 }
 
 
@@ -29,12 +29,12 @@ dokuman2 =  {
     'kayit_yapan':"atknblt",
             }
 
-db.getCollection(colName).insertOne(dokuman)
+//db.getCollection(colName).insertOne(dokuman)
 
 dokumanlar = [dokuman,dokuman2]
 
 db.getCollection(colName).insertMany(dokumanlar,{ordered:true})
-*/
+
 
 dokuman = {
     'fiyat':32.25,

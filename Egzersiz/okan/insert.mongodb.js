@@ -16,7 +16,7 @@ dokuman = {
 }
 
 db.getCollection(colName).insertOne(dokuman)
-*/
+
 
 
 dokuman = {
@@ -36,3 +36,5 @@ colName = "bilgisayar"
 use("kutuphane")
 
 db.getCollection(colName).insertOne(dokuman)
+
+*/
