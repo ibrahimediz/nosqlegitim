@@ -16,14 +16,14 @@
 # 'il': 'ANKARA', 
 # 'ilçe': 'Çankaya'}
 
-# import os 
-# dosyaismi = "ilk"
-# # print(os.listdir("Egzersiz/"))
-# for item in os.listdir("Egzersiz/"):
-#     if not os.path.exists(f"Egzersiz/{item}"):
-#         os.mkdir(f"Egzersiz/{item}")
-#     open(f"Egzersiz/{item}/{dosyaismi}.mongodb.js","a+")
+import os 
+dosyaismi = "insert"
+# print(os.listdir("Egzersiz/"))
+for item in os.listdir("Egzersiz/"):
+    if not os.path.exists(f"Egzersiz/{item}"):
+        os.mkdir(f"Egzersiz/{item}")
+    open(f"Egzersiz/{item}/{dosyaismi}.mongodb.js","a+")
  
-from pymongo import MongoClient
-client = MongoClient("mongodb+srv://myAtlasDBUser:dbuser123@myatlasclusteredu.l0kv8ie.mongodb.net/?retryWrites=true&w=majority")
-print(*client.list_database_names())
+# from pymongo import MongoClient
+# client = MongoClient("mongodb+srv://myAtlasDBUser:dbuser123@myatlasclusteredu.l0kv8ie.mongodb.net/?retryWrites=true&w=majority")
+# print(*client.list_database_names())

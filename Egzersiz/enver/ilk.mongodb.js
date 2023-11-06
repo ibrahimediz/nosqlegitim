@@ -1,4 +1,7 @@
-databaseName = "sample_guides"
-collectionName = "planets"
-use(databaseName)
-db.getCollection(collectionName).findOne()
+
+// İlk Veriyi çekme
+let database = "sample_guides"
+let collection = "planets"
+use(database)
+db.getCollection(collection).findOne()
+
