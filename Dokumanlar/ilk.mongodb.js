@@ -1,4 +1,4 @@
 databaseName = "sample_training"
-collectionName = "companies"
+collectionName = "planets"
 use(databaseName)
 db.getCollection(collectionName).findOne()

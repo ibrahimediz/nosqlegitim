@@ -17,15 +17,3 @@ dokuman = {
     'kayit_yapan':"İbrahim EDİZ",
 }
 */
-dokuman = {
-    'fiyat':32.25,
-    'marka':"Araba Sevdası",
-    'kayit_tarihi': new Date(),
-    "HDD":["1TB","PCIex"],
-    'islemci':"i9",
-    'ram':"32 GB",
-    'os':"FreeDOS",
-    'kayit_yapan':"İbrahim EDİZ",
-}
-use("donanim")
-db.getCollection("bilgisayar").insertOne(dokuman)
