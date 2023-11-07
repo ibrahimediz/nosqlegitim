@@ -1,1 +1,4 @@
-dbName = "sample_guides"
+Use("sample_analytics")
+db.getCollection("accounts").find({
+    $and:
+})

@@ -9,3 +9,11 @@ yukarıdaki bağlantı bilgisini kullanarak
  ifadelerini barındıran verilerin listelenmesi
 */
 
+
+
+//#########################################
+/* "sample_airbnb" veritabanında "listingsAndReviews" koleksiyonun da
+"image" başlığı olmayan kayıtların ve "minimum_nights" başlığının 1 e eşit olduğu
+kayıtların listelenmesi
+*/
+

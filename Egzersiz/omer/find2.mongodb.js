@@ -1,2 +1,22 @@
-use("sample_analytics")
-db.getCollection("accounts").find({limit:{$gte:1000}},{products:1,InvestmentStock:1, Derivatives:1})
+// use("sample_analytics")
+// db.getCollection("accounts").find(
+//     {$and:[
+//         {limit:{$gte:10000}},
+//         {products:{$in:["InvestmentStock", "Derivatives"]}}
+//     ]}    
+// )
+
+use("sample_airbnb")
+db.getCollection("listingsAndReviews").find(
+    {
+        $and: [
+            {
+                image:{$exists:false} 
+             },
+             {
+                 minimum_nights:{$eq:"1"}
+             }
+        ]
+    }
+)
+

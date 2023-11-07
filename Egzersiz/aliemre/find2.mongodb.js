@@ -15,15 +15,12 @@ use(dbName)
 db.getCollection("accounts").find({
     $and:[
         {limit:{$gte:1000}},
-        ,{
+        {
             products:{
                 $in:["InvestmentStock","Derivatives"]
                 }
         }
     ]
-    },
-    {
-        //         name:1,
-        //         price:1,
-        //         color:1
-        //     })
+    })
+
+    

@@ -8,9 +8,11 @@ yukarıdaki bağlantı bilgisini kullanarak
 "products" alanında InvestmentStock,Derivatives
  ifadelerini barındıran verilerin listelenmesi
 */
+
 databaseName = "sample_analytics"
 collectionName ="accounts"
 use(databaseName)
+
 db.getCollection(collectionName).find({"limit":{$gt:10000}},
 {_id:0,account_id:1})
 
@@ -18,6 +20,6 @@ db.getCollection(collectionName).find({"limit":{$gt:10000}},
 /*db.getCollection("urunler").find({},{name:1,price:1,spec:{ram:1}});*/
 
 
-db.getCollection("urunler").find({
+db.getCollection(collectionName).find({
     limit:{$exists:10000}
 },{_id:0})
