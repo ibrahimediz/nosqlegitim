@@ -120,9 +120,9 @@ collectionName = "urunler"
 use(databaseName)
 // db.getCollection(collectionName).find({"isim":"Cevaplar1111"})
 db.getCollection(collectionName).updateOne(
-    {_id:1},
+    {_id:ObjectId("64ca3518ebf5ff3366e48af6")},
     {
-        $unset:{price:""}
+        $unset:{price:"","icerik.sut":"","kupon.4":""}
     }
     )
 // ###############################
