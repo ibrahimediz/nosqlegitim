@@ -14,5 +14,10 @@ db.getCollection(collectionName).find({
         db.getCollection("listingAndReviews").find({
             $and:[
                 {Image:{$exist:false}},
-             
-        })
+            
+                     {
+                             minimum_nights:{$eq:"1"}
+                         }
+                     ]
+                 }
+        )

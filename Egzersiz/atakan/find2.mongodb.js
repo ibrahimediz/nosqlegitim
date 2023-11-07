@@ -7,17 +7,27 @@ use("sample_analytics")
      ]
  })
 */
-
-use("sample_airbnb")
-db.getCollection("listingsAndReviews").find(
+/*
+databaseName = "sample_airbnb"
+collectionName = "listingsAndReviews" 
+use(databaseName)
+db.getCollection(collectionName).find(
     {
-        $and:[
-            {
-               image:{$exists:false} 
-            },
-            {
-                minimum_nights:{$eq:"1"}
-            }
-        ]
+        minimum_nights:{$type:["string"]}
+    }
+)
+db.getCollection(collectionName).find(
+    {
+        minimum_nights:{$type:["string","number"]}
+    }
+)
+*/
+dbname="kutuphane"
+colName="urunler"
+use(dbname)
+db.getCollection(colName).findAndModify(
+    {
+        query:{_id:3},
+        update: {$inc}
     }
 )

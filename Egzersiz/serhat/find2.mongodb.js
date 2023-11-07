@@ -8,12 +8,12 @@ use(databaseName)
 "products" alanında InvestmentStock,Derivatives
  ifadelerini barındıran verilerin listelenmesi
 */
-// db.getCollection(collectionName).find({
-//     $and: [
-//         {limit:{$gte:10000}},
-//         {products:{$in:["InvestmentStock","Derivatives"]}}
-//     ]
-// })
+db.getCollection(collectionName).find({
+    $and: [
+        {limit:{$gte:10000}},
+        {products:{$in:["InvestmentStock","Derivatives"]}}
+    ]
+})
 
 //#########################################
 /* "sample_airbnb" veritabanında "listingsAndReviews" koleksiyonun da

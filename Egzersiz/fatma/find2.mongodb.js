@@ -1,4 +1,13 @@
-Use("sample_analytics")
-db.getCollection("accounts").find({
-    $and:
-})
+databaseName = "sample_airbnb"
+collectionName = "listingsAndReviews" 
+use(databaseName)
+db.getCollection(collectionName).find(
+    {
+        minimum_nights:{$type:["string"]}
+    }
+)
+db.getCollection(collectionName).find(
+    {
+        minimum_nights:{$type:["string","number"]}
+    }
+)
