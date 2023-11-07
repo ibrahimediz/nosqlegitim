@@ -1,4 +1,16 @@
+/*
+mongodb+srv://myAtlasDBUser:dbuser123@myatlasclusteredu.l0kv8ie.mongodb.net
+yukarıdaki bağlantı bilgisini kullanarak
 
-use("sample_training");
-// db.getCollection("inspections").findOne()
- db.getCollection("inspections").findOne({_id:ObjectId("56d61033a378eccde8a83551")}) 
+sample_guides içindeki planets koleksiyonundan 
+güneşe gore sırası "orderFromSun" 2 den büyük olan kayıtların
+sadece isimlerini "name" ve "surfaceTemperatureC" 
+yüzey sıcaklıklarının min değerini listeleyelim
+*/
+
+databaseName = "sample_guides"
+collectionName ="planets"
+use(databaseName)
+db.getCollection(collectionName).find({orderFromSun:{$gt:2}},{_id:0,name:1})
+
+

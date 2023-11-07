@@ -1,5 +1,6 @@
-use("sample_training");
-db.getCollection("inspections").findOne()
-db.getCollection("inspections").findOne({_id:ObjectId: ObjectId('5125215123')})
-db.getCollection("inspections").findOne
+databaseName = "sample_guides"
+collectionName = "planets"
+use(databaseName)
 
+
+db.getCollection(collectionName).find({orderFromSun:{$gt:2}},{_id:0,name:1,"surfaceTemperatureC.min":1})

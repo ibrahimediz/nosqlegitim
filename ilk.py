@@ -17,7 +17,7 @@
 # 'ilçe': 'Çankaya'}
 
 import os 
-dosyaismi = "find"
+dosyaismi = "find2"
 # print(os.listdir("Egzersiz/"))
 for item in os.listdir("Egzersiz/"):
     if not os.path.exists(f"Egzersiz/{item}"):
