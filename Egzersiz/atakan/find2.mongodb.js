@@ -21,4 +21,3 @@ db.getCollection("listingsAndReviews").find(
         ]
     }
 )
-
